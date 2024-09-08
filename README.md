@@ -1,6 +1,6 @@
 ***
 <div align="center">
-  <img src="https://example.com/icon.png" alt="项目图标" width="100">
+  <img src="https://ts1.cn.mm.bing.net/th?id=OIP-C.TH_rsboCaeC15QYOq6om4wAAAA&w=247&h=247&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2" alt="项目图标" width="100">
   <h1>🌟 ustb-jwgl-manager 🌟</h1>
   <p>贝壳选课辅助工具</p>
 </div>
