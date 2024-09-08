@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ stu.name }} | 个人主页 </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- 引入jQuery库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .collapse-content {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>User Profile（数据可能不准确，仅供参考）</h2>
+                <div class="mb-12">
+                    <label for="name" class="form-label">学生姓名:</label>
+                    <div id="" class="collapse-content-1">
+                        <input type="text" value=" {{ stu.name }} " class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <label for="name" class="form-label">个人信息::</label>
+                    <div id="name" class="collapse-content-1">
+                        <input type="text" value=" {{ stu.detail }} " class="form-control" readonly>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <label for="name" class="form-label">IP地址::</label>
+                    <div id="name" class="collapse-content-1">
+                        <input type="text" value=" {{ stu.ip }} " class="form-control" readonly>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 已选课程: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.selectedClasses | safe }} </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 必修课:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.compulsory | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 专业选修课:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.professionalElectives | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 素质拓展课:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.qualityDevelopmentCourse | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 跨专业选课:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.interdisciplinaryCourseSelection | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 班班课程:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.classLessons | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 其他选课:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.OtherCourseSelections | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 辅修选课:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.fuxuiClasses | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 必修课成绩:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.grades | safe }} </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 创新学分:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.chuangXinXueFen | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 英英（小语种）战绩:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.englishGrades | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 教学计划:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.jiaoXueJiHua | safe }} </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-12">
+                        <label class="form-labe2"> 学业进度:: </label>
+                        <button class="btn btn-c" type="button">展开/折叠 </button>
+                        <div class="collapse-content"> {{ stu.xueYeWanChengDu | safe }} </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 隐藏所有的.collapse-content
+            $(".collapse-content").hide();
+
+            // 给.btn-c按钮绑定点击事件
+            $(".btn-c").click(function () {
+                $(this).next(".collapse-content").toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

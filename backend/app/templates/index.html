@@ -1,0 +1,121 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2024-02-16 20:55:52
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2024-02-16 21:42:11
+ * @FilePath: \app\templates\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+{% extends "base.html" %}
+{% block css %}
+<style>
+  h4 {
+    text-shadow: 2px 2px 4px #000000;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .row {
+    margin: 50px auto;
+    padding: 20px 0;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .row:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="text-center my-4">贝壳选课辅助工具</h1>
+  <p class="lead text-center mb-5">专为小贝壳们设计的选课辅助工具，解决选课难题</p>
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <h4>已打包为exe可执行文件，开箱即用！</h4>
+    </div>
+    <div class="col-md-6 col-12">
+      <img width="60%"
+        src="https://cdn.nlark.com/yuque/0/2024/png/35006257/1707836377800-a8091908-4fbd-4241-8b09-458dea8e7f08.png"
+        alt="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <img width="60%"
+        src="https://cdn.nlark.com/yuque/0/2024/png/35006257/1707810830295-375bd8e5-ba70-480f-b9d0-27fdc4e9187f.png"
+        alt="">
+      <img width="30%"
+        src="https://cdn.nlark.com/yuque/0/2024/png/35006257/1707810997709-2610a9bb-a7b3-466a-b5da-f64c8ea7f787.png"
+        alt="">
+    </div>
+    <div class="col-md-6 col-12">
+      <h4>使用微信扫码授权，操作更便捷！</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5 col-12">
+      <h4>可视化操作，添加课程更简单！</h4>
+    </div>
+    <div class="col-md-7 col-12">
+      <img width="90%"
+        src="https://cdn.nlark.com/yuque/0/2024/png/35006257/1707816007985-0198a5d5-3f26-48f8-9a83-6d4d7fb0618d.png?x-oss-process=image%2Fresize%2Cw_937%2Climit_0"
+        alt="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <img width="90%"
+        src="https://cdn.nlark.com/yuque/0/2024/png/35006257/1707816314272-6eea5d43-5371-4027-b43f-4bf5d143641a.png?x-oss-process=image%2Fresize%2Cw_937%2Climit_0"
+        alt="">
+    </div>
+    <div class="col-md-6 col-12">
+      <h4>亦可手动添加，更加实用可控！</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <h4>日志记录，消息不丢失！</h4>
+    </div>
+    <div class="col-md-6 col-12">
+      <img width="60%"
+        src="https://cdn.nlark.com/yuque/0/2024/png/35006257/1707817211144-54b93f5f-5acd-44ae-bffc-c88678e2b214.png?x-oss-process=image%2Fresize%2Cw_647%2Climit_0"
+        alt="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <img width="90%"
+        src="https://cdn.nlark.com/yuque/0/2024/png/35006257/1707817614125-9e8e7f55-ef7b-4b14-8bc6-5085eeccb2bf.png"
+        alt="">
+    </div>
+    <div class="col-md-6 col-12">
+      <h4>邮箱消息提醒，抢课更省心！</h4>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <h4>程序参数可控，定制你的抢课方案！</h4>
+    </div>
+    <div class="col-md-6 col-12">
+      <img width="80%"
+        src="https://cdn.nlark.com/yuque/0/2024/png/35006257/1707817782311-23eef29e-a62f-4b7b-8062-59a74f0c890f.png"
+        alt="">
+    </div>
+  </div>
+
+  <h2 class="text-center my-4">还在等什么，赶紧去<a target="_blank" class="nav-link" href="{% url 'download' %}">下载</a>体验吧</h2>
+
+</div>
+{% endblock %}

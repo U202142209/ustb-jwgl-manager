@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">反馈表单</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+    <p>我们将根据您填写的联系方式联系您</p>
+</div>
+
+{% endblock %}

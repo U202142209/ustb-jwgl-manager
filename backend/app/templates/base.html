@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>贝壳选课辅助工具</title>
+  <!-- 引入Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 引入Vue3 -->
+  <script src="https://unpkg.com/vue@next"></script>
+  <style>
+    .nav-item {
+      padding: 0 15px;
+    }
+  </style>
+  {% block css %}{% endblock %}
+</head>
+
+<body>
+  <!-- 顶部导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">贝壳选课辅助工具</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a target="_blank" class="nav-link" href="{% url 'home' %}">首页</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank" class="nav-link" href="https://www.yuque.com/zhao314159/rthvzo/zyzv233i7v28kcq4">文档</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank" class="nav-link" href="{% url 'download' %}">下载中心</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank" class="nav-link" href="{% url 'feedback' %}">反馈</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Vue示例 -->
+  <div id="app">
+    <h1>{{ message }}</h1>
+    <div>
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: '欢迎使用贝壳选课辅助工具！'
+        }
+      }
+    })
+
+    app.mount('#app')
+  </script>
+
+  <!-- 底部导航栏 -->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <p>版权所有 &copy; 2024 贝壳选课辅助工具</p>
+    </div>
+  </footer>
+
+  <!-- 引入Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+lxml==5.2.2
+pillow==10.4.0
+PyJWT==2.8.0
+requests==2.32.3
+mysqlclient
+django-ckeditor==6.7.1
+django-js-asset==2.2.0
+django_redis
+django
+django-simpleui

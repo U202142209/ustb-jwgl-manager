@@ -1,0 +1,70 @@
+.idea
+
+**/__pycache__/
+# Django migration files
+*/migrations/*.py
+!*/migrations/__init__.py
+
+backend/app/migrations
+backend/logs/
+backend/db.sqlite3
+backend/media/
+backend/app/tests.py
+
+**/__pycache__/*
+__pycache__/*
+*.pyc
+*.pyo
+
+# 客户端
+
+frontend/.vs
+**/*.suo
+**/*.user
+**/*.sln.docstates
+# Visual Studio 2015/2017 project user preferences
+**/*.vspscc
+**/*_i.c
+**/*_p.c
+**/*.vssettings
+**/*.vssscc
+**/*.vostscc
+**/*.scc
+
+# Output files
+**/*.obj
+**/*.exe
+**/*.pdb
+**/*.dll
+**/*.manifest
+**/*.winmd
+**/*.xap
+**/*.baml
+**/*.opendb
+**/*.opensdf
+**/*.sdf
+**/*.cache
+**/*.ilk
+**/*.meta
+**/*.idb
+**/*.log
+**/*.lib
+**/*.sbr
+
+
+# NuGet Packages
+frontend/packages
+frontend/JwglqProMax-Frontend/obj/
+frontend/JwglqProMax-Frontend/bin/
+frontend/JwglqProMax-Frontend/Properties/Settings.Designer.cs
+frontend/JwglqProMax-Frontend/Properties/Settings.settings
+frontend/JwglqProMax-Frontend/Properties/Resources.Designer.cs
+frontend/JwglqProMax-Frontend/Properties/Resources.resx
+frontend/JwglqProMax-Frontend/JwglqProMax-Frontend_TemporaryKey.pfx
+
+# Visual Studio 2017 auto generated files
+Generated\*
+
+# Visual Studio 2019 auto generated files
+*.sln.cache
+
